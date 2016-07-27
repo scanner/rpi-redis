@@ -1,6 +1,6 @@
 # Pull base image
-FROM resin/rpi-raspbian:wheezy
-MAINTAINER Govinda Fichtner <govinda@hypriot.com>
+FROM scanner/rpi-raspian-qemu:wheezy
+MAINTAINER Scanner Luce <scanner@apricot.com>
 
 # add our user and group first to make sure their IDs get assigned consistently, regardless of whatever dependencies get added
 RUN groupadd -r redis && useradd -r -g redis redis
